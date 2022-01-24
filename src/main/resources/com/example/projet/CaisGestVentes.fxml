@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet.CaisGestVenteController">
+    <left>
+        <AnchorPane prefHeight="400.0" prefWidth="126.0" style="-fx-background-color: #072227;" BorderPane.alignment="CENTER">
+            <children>
+                <Text fill="#4fbdba" layoutX="28.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Swirl">
+                    <font>
+                        <Font name="Jumper PERSONAL USE ONLY Regular" size="24.0" />
+                    </font>
+                </Text>
+                <Text fill="#4fbdba" layoutX="39.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="technologies">
+                    <font>
+                        <Font size="8.0" />
+                    </font>
+                </Text>
+                <Button layoutX="18.0" layoutY="661.0" mnemonicParsing="false" onAction="#LogoutButtonAction" prefHeight="26.0" prefWidth="87.0" style="-fx-background-color: #4FBDBA;" text="Logout" textFill="WHITE" />
+                <Button layoutX="18.0" layoutY="607.0" mnemonicParsing="false" onAction="#RetourButtonAction" prefHeight="29.0" prefWidth="87.0" style="-fx-background-color: white;" text="Retour" />
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane prefHeight="720.0" prefWidth="1010.0" BorderPane.alignment="CENTER">
+            <children>
+                <Rectangle arcHeight="26.0" arcWidth="25.0" fill="#4fbdba" height="31.0" layoutX="27.0" layoutY="307.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="425.0" />
+                <Label layoutX="804.0" layoutY="44.0" text="Hamid">
+                    <font>
+                        <Font name="Qatar2022 Arabic Heavy" size="21.0" />
+                    </font>
+                </Label>
+                <Label layoutX="804.0" layoutY="62.0" text="Serghini">
+                    <font>
+                        <Font name="Qatar2022 Arabic Bold" size="17.0" />
+                    </font>
+                </Label>
+                <Label layoutX="26.0" layoutY="33.0" text="Gestion Ventes">
+                    <font>
+                        <Font name="Qatar2022 Arabic Heavy" size="32.0" />
+                    </font>
+                </Label>
+                <Label layoutX="28.0" layoutY="76.0" text="Vendredi 21 Janvier 2022">
+                    <font>
+                        <Font name="Qatar2022 Arabic Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Circle fill="#4fbdba" layoutX="901.0" layoutY="62.0" radius="21.0" stroke="#072227" strokeType="INSIDE" strokeWidth="2.0" />
+                <TextField fx:id="ProduitsKeywordsTextField" layoutX="184.0" layoutY="309.0" prefHeight="26.0" prefWidth="262.0" promptText="Chercher Un Produit" style="-fx-background-color: #4fbdba;" />
+                <Text fill="WHITE" layoutX="39.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chercher Un Produit">
+                    <font>
+                        <Font name="Qatar2022 Arabic Bold" size="14.0" />
+                    </font>
+                </Text>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#22cacd" height="5.0" layoutX="28.0" layoutY="69.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+                <Label layoutX="30.0" layoutY="369.0" text="Ajouter Vente">
+                    <font>
+                        <Font name="Qatar2022 Arabic Heavy" size="21.0" />
+                    </font>
+                </Label>
+                <Label layoutX="396.0" layoutY="369.0" text="Modifier Vente">
+                    <font>
+                        <Font name="Qatar2022 Arabic Heavy" size="21.0" />
+                    </font>
+                </Label>
+                <Label layoutX="696.0" layoutY="369.0" text="Supprimer Vente.">
+                    <font>
+                        <Font name="Qatar2022 Arabic Heavy" size="21.0" />
+                    </font>
+                </Label>
+                <TextField layoutX="30.0" layoutY="412.0" prefHeight="26.0" prefWidth="190.0" promptText="Nom Produit" />
+                <TextField layoutX="30.0" layoutY="452.0" prefHeight="26.0" prefWidth="190.0" promptText="Categorie" />
+                <TextField layoutX="30.0" layoutY="492.0" prefHeight="26.0" prefWidth="190.0" promptText="Prix D'Achat" />
+                <TextField layoutX="30.0" layoutY="532.0" prefHeight="26.0" prefWidth="190.0" promptText="Prix De Vente" />
+                <TextField layoutX="30.0" layoutY="572.0" prefHeight="26.0" prefWidth="190.0" promptText="Quantite" />
+                <TextField layoutX="30.0" layoutY="612.0" prefHeight="26.0" prefWidth="190.0" promptText="Fournisseur" />
+                <Button layoutX="33.0" layoutY="656.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="108.0" style="-fx-background-color: #4fbdba;" text="Ajouter" textFill="WHITE" />
+                <TextField layoutX="396.0" layoutY="436.0" promptText="Code Produit" />
+                <TextField layoutX="290.0" layoutY="486.0" promptText="Nom Produit" />
+                <TextField layoutX="290.0" layoutY="526.0" promptText="Categorie" />
+                <TextField layoutX="290.0" layoutY="566.0" promptText="Prix D'Achat" />
+                <TextField layoutX="482.0" layoutY="486.0" promptText="Prix De Vente" />
+                <TextField layoutX="482.0" layoutY="526.0" promptText="Quantite" />
+                <TextField layoutX="482.0" layoutY="566.0" promptText="Fournisseur" />
+                <Button layoutX="417.0" layoutY="656.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="108.0" style="-fx-background-color: #4fbdba;" text="Modifier" textFill="WHITE" />
+                <TextField layoutX="696.0" layoutY="506.0" promptText="Code Produit" />
+                <Button layoutX="713.0" layoutY="656.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="108.0" style="-fx-background-color: #4fbdba;" text="Supprimer" textFill="WHITE" />
+            <TabPane layoutX="27.0" layoutY="111.0" prefHeight="181.0" prefWidth="890.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Liste Des Produits">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="ProductTableView" prefHeight="155.0" prefWidth="894.0">
+                                 <columns>
+                                    <TableColumn fx:id="CodeProdColumn" prefWidth="126.57121276855469" text="Code Produit" />
+                                    <TableColumn fx:id="NomProdColumn" prefWidth="135.79608154296875" text="Nom Produit" />
+                                    <TableColumn fx:id="CategorieProdColumn" prefWidth="134.20391845703125" text="Categorie" />
+                                    <TableColumn fx:id="PrixAchatProdColumn" prefWidth="125.2862548828125" text="Prix D'Achat" />
+                                    <TableColumn fx:id="PrixVenteProdColumn" prefWidth="127.10333251953125" text="Prix de Vente" />
+                                    <TableColumn fx:id="QuantiteProdColumn" prefWidth="129.36871337890625" text="Quantite" />
+                                    <TableColumn fx:id="FournisseurProdColumn" prefWidth="113.0" text="Fournisseur" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Liste Des Ventes">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="VenteTableView" layoutX="-2.0" prefHeight="149.0" prefWidth="893.0">
+                                <columns>
+                                  <TableColumn fx:id="CodeVenteColumn" prefWidth="193.80477905273438" text="Code Vente" />
+                                  <TableColumn fx:id="DateVenteColumn" prefWidth="302.69529724121094" text="Date vente" />
+                                    <TableColumn fx:id="PrixTotalVenteColumn" prefWidth="196.01397705078125" text="Prix Total" />
+                                    <TableColumn fx:id="idCaissierVenteColumn" prefWidth="200.486083984375" text="id Caissier" />
+                                </columns>
+                              </TableView>
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+            <Rectangle arcHeight="26.0" arcWidth="25.0" fill="#4fbdba" height="31.0" layoutX="487.0" layoutY="307.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="425.0" />
+            <TextField fx:id="VentesKeywordsTextField" layoutX="644.0" layoutY="309.0" prefHeight="26.0" prefWidth="262.0" promptText="Chercher Une Vente" style="-fx-background-color: #4fbdba;" />
+            <Text fill="WHITE" layoutX="499.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chercher Une Vente">
+               <font>
+                  <Font name="Qatar2022 Arabic Bold" size="14.0" />
+               </font>
+            </Text>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

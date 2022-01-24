@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet.MainController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="215.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#028394" layoutX="63.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Swirl">
+               <font>
+                  <Font name="Jumper PERSONAL USE ONLY Regular" size="32.0" />
+               </font>
+            </Text>
+            <Text fill="#028394" layoutX="73.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="technologies" />
+            <ImageView fitHeight="80.0" fitWidth="81.0" layoutX="67.0" layoutY="140.0">
+               <image>
+                  <Image url="@../../../../../Images/Bruh.jpeg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="438.0" style="-fx-background-color: #072227 #072227;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="31.0" layoutY="43.0" prefHeight="60.0" prefWidth="126.0" text="Bonjour" textFill="#028394">
+               <font>
+                  <Font name="Qatar2022 Arabic Heavy" size="27.0" />
+               </font>
+            </Label>
+            <Button fx:id="GerantButton" layoutX="28.0" layoutY="148.0" mnemonicParsing="false" onAction="#ChooseToGerantLogin" prefHeight="80.0" prefWidth="261.0" style="-fx-background-color: #028394#028394 #028394#028394;" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="CaissierButton" layoutX="28.0" layoutY="250.0" mnemonicParsing="false" onAction="#ChooseToCaissierLogin" prefHeight="80.0" prefWidth="262.0" style="-fx-background-color: #028394#028394 #028394#028394;" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="46.0" layoutY="174.0" text="Gerant" textFill="WHITE">
+               <font>
+                  <Font name="Qatar2022 Arabic Bold" size="24.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Label layoutX="46.0" layoutY="275.0" text="Caissier" textFill="WHITE">
+               <font>
+                  <Font name="Qatar2022 Arabic Bold" size="23.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Label layoutX="31.0" layoutY="84.0" text="Veuillez choisir Votre Classe" textFill="WHITE">
+               <font>
+                  <Font name="Qatar2022 Arabic Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

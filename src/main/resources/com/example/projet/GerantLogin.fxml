@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="547.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet.MainController">
+    <left>
+        <AnchorPane prefHeight="400.0" prefWidth="226.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fx:id="brandingImageView" fitHeight="72.0" fitWidth="63.0" layoutX="79.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../../../Images/Bruh.jpeg" />
+                    </image>
+                </ImageView>
+                <Text fill="#028394" layoutX="66.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Swirl">
+                    <font>
+                        <Font name="Jumper PERSONAL USE ONLY Regular" size="32.0" />
+                    </font>
+                </Text>
+                <Text fill="#028394" layoutX="76.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="technologies" />
+            </children>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="400.0" prefWidth="353.0" style="-fx-background-color: LIGHTBLUE;" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="28.0" layoutY="47.0" prefHeight="62.0" prefWidth="177.0" text="Login" textFill="#028394">
+                    <font>
+                        <Font name="Qatar2022 Arabic Bold" size="52.0" />
+                    </font>
+                </Label>
+                <Text fill="WHITE" layoutX="31.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+                <TextField fx:id="usernameTextField" layoutX="29.0" layoutY="157.0" prefHeight="26.0" prefWidth="250.0" promptText="Username" />
+                <Text fill="WHITE" layoutX="29.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+                <PasswordField fx:id="passwordTextField" layoutX="30.0" layoutY="223.0" prefHeight="26.0" prefWidth="250.0" promptText="Password" />
+                <Button fx:id="LoginButton" layoutX="58.0" layoutY="272.0" mnemonicParsing="false" onAction="#GerantLoginButtonAction" prefHeight="26.0" prefWidth="193.0" style="-fx-background-color: #028394#028394;" text="Login" textFill="WHITE">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor></Button>
+                <Button fx:id="CancelButton" layoutX="170.0" layoutY="339.0" mnemonicParsing="false" onAction="#CancelButtonAction" prefHeight="26.0" prefWidth="119.0" style="-fx-background-color: WHITE;" text="Annuler" textFill="#028394">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor></Button>
+                <Label fx:id="LoginMessageLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" layoutY="311.0" prefHeight="17.0" prefWidth="318.0" textFill="#ff5d5d" />
+                <Button fx:id="RetourButton" layoutX="28.0" layoutY="339.0" mnemonicParsing="false" onAction="#Retour" prefHeight="26.0" prefWidth="119.0" style="-fx-background-color: WHITE;" text="Retour" textFill="#028394">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+            </children>
+        </AnchorPane>
+    </right>
+</BorderPane>

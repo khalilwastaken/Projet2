@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet.GerGestCaisController">
+   <children>
+      <TableView fx:id="CaissierTableView" layoutX="36.0" layoutY="67.0" prefHeight="158.0" prefWidth="995.0">
+        <columns>
+          <TableColumn fx:id="MatriculeColumn" prefWidth="225.75387573242188" text="Matricule" />
+          <TableColumn fx:id="NomColumn" prefWidth="162.74610137939453" text="Nom" />
+            <TableColumn fx:id="PrenomColumn" prefWidth="140.8524627685547" text="Prenom" />
+            <TableColumn fx:id="CINColumn" prefWidth="110.30740356445312" text="CIN" />
+            <TableColumn fx:id="AgeColumn" prefWidth="169.34982299804688" text="Age" />
+            <TableColumn fx:id="DateEmbchColumn" prefWidth="186.40182495117188" text="Date Embch" />
+        </columns>
+      </TableView>
+      <TextField fx:id="KeywordsTextField" layoutX="349.0" layoutY="262.0" prefHeight="26.0" prefWidth="427.0" />
+   </children>
+</AnchorPane>

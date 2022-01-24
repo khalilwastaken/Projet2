@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="547.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet.MainController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="215.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#028394" layoutX="61.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Swirl">
+               <font>
+                  <Font name="Jumper PERSONAL USE ONLY Regular" size="32.0" />
+               </font>
+            </Text>
+            <Text fill="#028394" layoutX="71.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="technologies" />
+            <ImageView fitHeight="76.0" fitWidth="76.0" layoutX="67.0" layoutY="133.0">
+               <image>
+                  <Image url="@../../../../../Images/Bruh.jpeg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="353.0" style="-fx-background-color: #072227 #072227 #072227 #072227;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="38.0" layoutY="26.0" prefHeight="62.0" prefWidth="147.0" text="Login" textFill="#028394">
+               <font>
+                  <Font name="Qatar2022 Arabic Heavy" size="52.0" />
+               </font>
+            </Label>
+            <Text fill="WHITE" layoutX="41.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+               <font>
+                  <Font name="Qatar2022 Arabic Bold" size="13.0" />
+               </font></Text>
+            <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="41.0" layoutY="149.0" prefHeight="26.0" prefWidth="250.0" promptText="Username" style="-fx-background-radius: 25; -fx-background-color: white;" />
+            <Text fill="WHITE" layoutX="41.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font name="Qatar2022 Arabic Bold" size="13.0" />
+               </font></Text>
+            <PasswordField fx:id="passwordTextField" alignment="CENTER" layoutX="42.0" layoutY="212.0" prefHeight="26.0" prefWidth="250.0" promptText="Password" style="-fx-background-radius: 25; -fx-background-color: white;" />
+            <Button fx:id="LoginButton" layoutX="42.0" layoutY="264.0" mnemonicParsing="false" onAction="#CaisLoginButtonAction" prefHeight="26.0" prefWidth="248.0" style="-fx-background-color: #028394#028394; -fx-background-radius: 25;" text="Login" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Qatar2022 Arabic Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="CancelButton" layoutX="179.0" layoutY="340.0" mnemonicParsing="false" onAction="#CancelButtonAction" prefHeight="26.0" prefWidth="119.0" style="-fx-background-color: WHITE; -fx-background-radius: 25;" text="Annuler" textFill="#028394">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Qatar2022 Arabic Bold" size="13.0" />
+               </font></Button>
+            <Label fx:id="LoginMessageLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" layoutY="304.0" prefHeight="17.0" prefWidth="331.0" textFill="#ff5d5d">
+               <font>
+                  <Font name="Qatar2022 Arabic Bold" size="13.0" />
+               </font></Label>
+            <Button fx:id="RetourButton" layoutX="37.0" layoutY="340.0" mnemonicParsing="false" onAction="#Retour" prefHeight="26.0" prefWidth="119.0" style="-fx-background-color: WHITE; -fx-background-radius: 25;" text="Retour" textFill="#028394">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Qatar2022 Arabic Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

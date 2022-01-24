@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1011.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet.GerantPanelController">
+   <left>
+      <AnchorPane prefHeight="564.0" prefWidth="125.0" style="-fx-background-color: #072227;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#4fbdba" layoutX="29.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Swirl">
+               <font>
+                  <Font name="Jumper PERSONAL USE ONLY Regular" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#4fbdba" layoutX="39.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="technologies">
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </Text>
+            <Button fx:id="LogoutButton" layoutX="18.0" layoutY="434.0" mnemonicParsing="false" onAction="#LogoutButtonAction" prefHeight="36.0" prefWidth="90.0" style="-fx-background-color: #ffab4c #ffab4c;" text="Logout" textFill="WHITE" />
+            <Button fx:id="RetourButton" layoutX="18.0" layoutY="384.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="90.0" style="-fx-background-color: White;" text="Retour" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="720.0" prefWidth="955.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="26.0" layoutY="13.0" text="Menu Gerant" textFill="#142f43">
+               <font>
+                  <Font name="Cadillac Sans Arabic Bold" size="36.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffab4c" height="6.0" layoutX="28.0" layoutY="85.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="183.0" />
+            <Button fx:id="GestVenteButton" layoutX="236.0" layoutY="150.0" mnemonicParsing="false" onAction="#GestVentesButtonAction" prefHeight="290.0" prefWidth="200.0" style="-fx-background-color: #ffab4c; -fx-background-radius: 25;" />
+            <Button fx:id="GestCaissButton" layoutX="446.0" layoutY="150.0" mnemonicParsing="false" onAction="#GestCaissiersButtonAction" prefHeight="290.0" prefWidth="200.0" style="-fx-background-color: #ffab4c; -fx-background-radius: 25;" />
+            <Button fx:id="GestFournissButton" layoutX="656.0" layoutY="150.0" mnemonicParsing="false" onAction="#GestFournisseursButtonAction" prefHeight="290.0" prefWidth="200.0" style="-fx-background-color: #ffab4c; -fx-background-radius: 25;" />
+            <Label layoutX="28.0" layoutY="84.0" text="Vendredi 24 Janvier 2022">
+               <font>
+                  <Font name="Cadillac Sans Arabic Light" size="13.0" />
+               </font>
+            </Label>
+            <Circle fill="#072227" layoutX="823.0" layoutY="73.0" radius="28.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Label layoutX="691.0" layoutY="37.0" prefWidth="99.0" text="FirstName">
+               <font>
+                  <Font name="Cadillac Sans Arabic Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_RIGHT" layoutX="742.0" layoutY="58.0" prefHeight="37.0" prefWidth="45.0" text="Last">
+               <font>
+                  <Font name="Cadillac Sans Arabic Light" size="21.0" />
+               </font>
+            </Label>
+            <Button fx:id="GestProdButton" layoutX="26.0" layoutY="150.0" mnemonicParsing="false" onAction="#GestProduitsButtonAction" prefHeight="290.0" prefWidth="200.0" style="-fx-background-color: #ffab4c; -fx-background-radius: 25;" />
+            <Label alignment="CENTER" layoutX="26.0" layoutY="319.0" prefHeight="62.0" prefWidth="200.0" text="Gestion">
+               <font>
+                  <Font name="Cadillac Sans Arabic Light" size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="26.0" layoutY="344.0" prefHeight="62.0" prefWidth="200.0" text="Des Produits">
+               <font>
+                  <Font name="Cadillac Sans Arabic Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="236.0" layoutY="319.0" prefHeight="62.0" prefWidth="200.0" text="Gestion" textAlignment="CENTER">
+               <font>
+                  <Font name="Cadillac Sans Arabic Light" size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="235.0" layoutY="334.0" prefHeight="80.0" prefWidth="201.0" text="Des Ventes" textAlignment="CENTER">
+               <font>
+                  <Font name="Cadillac Sans Arabic Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="446.0" layoutY="319.0" prefHeight="62.0" prefWidth="201.0" text="Gestion" textAlignment="CENTER">
+               <font>
+                  <Font name="Cadillac Sans Arabic Light" size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="445.0" layoutY="334.0" prefHeight="80.0" prefWidth="201.0" text="Des Caissiers" textAlignment="CENTER">
+               <font>
+                  <Font name="Cadillac Sans Arabic Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="656.0" layoutY="319.0" prefHeight="62.0" prefWidth="200.0" text="Gestion" textAlignment="CENTER">
+               <font>
+                  <Font name="Cadillac Sans Arabic Light" size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="655.0" layoutY="334.0" prefHeight="80.0" prefWidth="201.0" text="Des Fourniss." textAlignment="CENTER">
+               <font>
+                  <Font name="Cadillac Sans Arabic Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
